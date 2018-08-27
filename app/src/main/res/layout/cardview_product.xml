@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/list_background_pressed"
+            android:orientation="vertical"
+            android:padding="@dimen/keyline_1_minus_8dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imgPhoto"
+                    android:text="@string/text_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvComposicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFullName"
+                    android:layout_toEndOf="@+id/imgPhoto"
+                    android:text="@string/text_description"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+                <TextView
+                    android:id="@+id/tvUnidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvComposicion"
+                    android:layout_toEndOf="@+id/imgPhoto"
+                    android:text="@string/text_description"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_min"
+                    android:layout_below="@+id/tvUnidad"
+                    android:layout_toEndOf="@+id/imgPhoto"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btAudit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvTotalStores"
+                        android:text="@string/text_auditor"
+                        android:theme="@style/RaisedButtonDarkMin" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="60dp"
+                    android:layout_height="74dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginRight="@dimen/padding_text"
+                    android:layout_alignParentLeft="true"/>
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvFullName"
+                    android:src="@drawable/ic_check_circle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>
+
+
